@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Мои Друзья</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            text-decoration: none; /* Убираем подчеркивание у ссылок */
+            color: black; /* Цвет текста */
+        }
+        .card img {
+            border-radius: 8px;
+            width: 100%;
+            height: auto;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            margin-bottom: 0px;
+        }
+    </style>
 </head>
 <body>
-    <p>Рита привет</p>
+    <header>
+        <h1>Мои Друзья</h1>
+    </header>
+    <main>
+        <div class="card-container">
+            <a href="Senkayok.html" class="card">
+                <img src="Senkayok.jpg" alt="Друг 1">
+                <h2>Дарья</h2>
+            </a>
+            <a href="" class="card">
+                <img src="6141bc91-5c08-44d1-904b-fe275c92f833.jpg" alt="Друг 2">
+                <h2>Елисей</h2>
+                <p>Описание Елисея. Интересы, хобби и т.д.</p>
+            </a>
+            <a href="" class="card">
+                <img src="photo_5204441520625806112_c.jpg" alt="Друг 3">
+                <h2>Даниил</h2>
+                <p>Описание Даниила. Интересы, хобби и т.д.</p>
+            </a>
+            <a href="" class="card">
+                <img src="photo_5465333970376978524_c.jpg" alt="Друг 4">
+                <h2>Ульяна</h2>
+                <p>Описание Ульяны. Интересы, хобби и т.д.</p>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 Мои Друзья</p>
+    </footer>
 </body>
 </html>
